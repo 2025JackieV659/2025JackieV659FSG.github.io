@@ -1,0 +1,13 @@
+{
+	"name": "Gameoverscore",
+	"plugin-id": "Sprite",
+	"sid": 312518133834853,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": [],
+	"members": [
+		"GameOver",
+		"btnHome",
+		"btnplayagain"
+	]
+}

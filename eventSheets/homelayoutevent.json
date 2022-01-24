@@ -1,0 +1,111 @@
+{
+	"name": "HomeLayoutEvent",
+	"events": [
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Buttons",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 686119252480546,
+							"parameters": {
+								"object": "BtnPlay"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-layout",
+							"objectClass": "System",
+							"sid": 728969919601415,
+							"parameters": {
+								"layout": "GameLayout"
+							}
+						},
+						{
+							"id": "restart-layout",
+							"objectClass": "System",
+							"sid": 840720695054850
+						},
+						{
+							"id": "reset-global-variables",
+							"objectClass": "System",
+							"sid": 401754770822833
+						}
+					],
+					"sid": 354441912767446
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-touched-object",
+							"objectClass": "Touch",
+							"sid": 517087594288328,
+							"parameters": {
+								"object": "BtnMoreGames"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "go-to-url",
+							"objectClass": "Browser",
+							"sid": 499910933473127,
+							"parameters": {
+								"url": "\"https://2025jackiev659.github.io/\"",
+								"target": "self"
+							}
+						}
+					],
+					"sid": 508096406205237
+				}
+			],
+			"sid": 974942903958196
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Background2",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 732660196259706
+						}
+					],
+					"actions": [
+						{
+							"id": "stop-animation",
+							"objectClass": "Background",
+							"sid": 400263586896191
+						},
+						{
+							"id": "set-animation-frame",
+							"objectClass": "Background",
+							"sid": 211393786303110,
+							"parameters": {
+								"frame-number": "floor(random(0,5))"
+							}
+						}
+					],
+					"sid": 422228896758545
+				}
+			],
+			"sid": 962500424554788
+		}
+	],
+	"sid": 167162186702524
+}
